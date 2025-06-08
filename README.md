@@ -29,32 +29,40 @@ Returns a list of all upcoming fitness classes.
     "available_slots": 5
   },
 ]
+```
 
-2. POST /book
+### 2. POST /book
 Books a spot in a class for a client. Checks for slot availability.
 
-📥 Request Body:
+#### 📥 Request Body:
+```json
 {
   "class_id": 1,
   "client_name": "John Doe",
   "client_email": "john@example.com"
 }
+```
 
-✅ Successful Response:
+#### ✅ Successful Response:
+```json
 {
   "message": "Booking successful!",
   "booking_id": 123
 }
+```
+#### ❌ Error Response (e.g., no slots available):
+```json
 
-❌ Error Response (e.g., no slots available):
 {
   "error": "No available slots for this class."
 }
+```
 
-3. GET /bookings?email=client@example.com
+### 3. GET /bookings?email=client@example.com
 Returns all bookings associated with a specific client email.
 
 #### ✅ Response:
+```json
 [
   {
     "booking_id": 123,
@@ -62,16 +70,17 @@ Returns all bookings associated with a specific client email.
     "date": "2025-06-15T10:00:00",
     "instructor": "Alice"
   },
-  ...
+
 ]
+```
 
 ## 🧪 Running the Project Locally
-#### 1. Clone the repository
+### 1. Clone the repository
 
 git clone https://github.com/Program2113/fitness-booking-api.git
 cd fitness-booking-api
 
-#### 2. Install dependencies
+### 2. Install dependencies
 
 pip install -r requirements.txt
 
