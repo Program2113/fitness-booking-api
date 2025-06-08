@@ -1,3 +1,4 @@
+import logging
 from django.shortcuts import render
 from rest_framework.decorators import api_view, permission_classes, authentication_classes
 from rest_framework.permissions import IsAuthenticated, AllowAny
@@ -10,6 +11,7 @@ from .serializers import ClassSerializer, BookingSerializer, BookingRequestSeria
 from django.utils.timezone import activate
 import pytz
 
+logger = logging.getLogger(__name__)
 
 class CreateUserView(generics.CreateAPIView):
     """API endpoint for user registration."""
@@ -18,11 +20,15 @@ class CreateUserView(generics.CreateAPIView):
     permission_classes = [AllowAny]  # Allow anyone to register
     authentication_classes = []  # No authentication required for registration
 
+    logger.info("User registration accessed.")
+
 
 @api_view(['GET'])
 @authentication_classes([JWTAuthentication])
 @permission_classes([IsAuthenticated])
 def get_classes(request):
+    logger.info(f"Fetching classes for the user: {request.user.username}")
+    
     tz = request.GET.get("tz", "Asia/Kolkata")
     activate(pytz.timezone(tz))
     classes = Class.objects.all()
@@ -38,6 +44,7 @@ def book_class(request):
         try:
             fitness_class = Class.objects.get(id=serializer.validated_data['class_id'])
             if fitness_class.available_slots <= 0:
+                logger.info(f"No available slots for class: {fitness_class.name} requested by user: {request.user.username}")
                 return Response({"error": "No slots available"}, status=400)
             
             Booking.objects.create(
@@ -47,8 +54,11 @@ def book_class(request):
             )
             fitness_class.available_slots -= 1
             fitness_class.save()
+            logger.info(f"Booking successful for user: {request.user.username}, for class: {fitness_class.name}")
+
             return Response({"message": "Booking successful"}, status=201)
         except Class.DoesNotExist:
+            logger.info(f"Class not found for booking request: {serializer.validated_data['class_id']}")
             return Response({"error": "Class not found"}, status=404)
     return Response(serializer.errors, status=400)
 
@@ -59,5 +69,6 @@ def get_bookings(request):
     email = request.user.email  # Restrict to authenticated user's email
     bookings = Booking.objects.filter(client_email=email)
     serializer = BookingSerializer(bookings, many=True)
+    logger.info(f"Fetching bookings for user: {request.user.username}")
     return Response(serializer.data)
 
