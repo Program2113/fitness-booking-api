@@ -1,0 +1,181 @@
+[WARNING] 2025-06-08 19:35:04,183 django.request - Not Found: /book/
+[WARNING] 2025-06-08 19:35:04,591 django.request - Bad Request: /book/
+[WARNING] 2025-06-08 19:39:31,606 django.request - Not Found: /book/
+[WARNING] 2025-06-08 19:39:32,105 django.request - Bad Request: /book/
+[WARNING] 2025-06-08 19:41:03,444 django.request - Not Found: /book/
+[WARNING] 2025-06-08 19:41:03,929 django.request - Bad Request: /book/
+[WARNING] 2025-06-08 19:41:47,520 django.request - Not Found: /book/
+[WARNING] 2025-06-08 19:41:47,879 django.request - Bad Request: /book/
+[WARNING] 2025-06-08 19:42:19,461 django.request - Not Found: /book/
+[WARNING] 2025-06-08 19:42:19,825 django.request - Bad Request: /book/
+[WARNING] 2025-06-08 19:42:20,753 django.request - Not Found: /bookings
+[WARNING] 2025-06-08 19:42:21,126 django.request - Not Found: /bookings
+[WARNING] 2025-06-08 19:44:55,785 django.request - Not Found: /book/
+[WARNING] 2025-06-08 19:44:56,162 django.request - Bad Request: /book/
+[WARNING] 2025-06-08 19:47:03,850 django.request - Not Found: /book/
+[WARNING] 2025-06-08 19:47:04,251 django.request - Bad Request: /book/
+[WARNING] 2025-06-08 19:47:05,191 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-08 19:47:05,572 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-08 19:48:14,273 django.request - Not Found: /book/
+[WARNING] 2025-06-08 19:48:14,640 django.request - Bad Request: /book/
+[WARNING] 2025-06-08 19:48:15,464 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-08 19:48:16,018 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-08 19:48:38,000 django.request - Not Found: /book/
+[WARNING] 2025-06-08 19:48:38,342 django.request - Bad Request: /book/
+[WARNING] 2025-06-08 19:48:39,126 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-08 19:48:39,596 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-08 19:49:16,851 django.request - Not Found: /book/
+[WARNING] 2025-06-08 19:49:17,279 django.request - Bad Request: /book/
+[WARNING] 2025-06-08 19:49:18,345 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-08 19:49:18,795 django.request - Bad Request: /bookings/
+[INFO] 2025-06-08 19:52:13,796 django.utils.autoreload - Watching for file changes with StatReloader
+[WARNING] 2025-06-08 19:52:21,939 django.request - Not Found: /
+[WARNING] 2025-06-08 19:52:21,942 django.server - "GET / HTTP/1.1" 404 3571
+[WARNING] 2025-06-08 19:52:26,985 django.request - Not Found: /api/tokens
+[WARNING] 2025-06-08 19:52:26,989 django.server - "GET /api/tokens HTTP/1.1" 404 3619
+[WARNING] 2025-06-08 19:52:36,880 django.request - Method Not Allowed: /api/token/
+[WARNING] 2025-06-08 19:52:36,882 django.server - "GET /api/token/ HTTP/1.1" 405 7672
+[INFO] 2025-06-08 19:52:36,909 django.server - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[INFO] 2025-06-08 19:52:36,927 django.server - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[INFO] 2025-06-08 19:52:36,927 django.server - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[INFO] 2025-06-08 19:52:36,932 django.server - "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[INFO] 2025-06-08 19:52:36,933 django.server - "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[INFO] 2025-06-08 19:52:36,940 django.server - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[INFO] 2025-06-08 19:52:36,940 django.server - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[INFO] 2025-06-08 19:52:36,947 django.server - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[INFO] 2025-06-08 19:52:36,947 django.server - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[INFO] 2025-06-08 19:52:36,954 django.server - "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[INFO] 2025-06-08 19:52:36,956 django.server - "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[INFO] 2025-06-08 19:52:36,959 django.server - "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[INFO] 2025-06-08 19:52:53,524 django.server - "POST /api/token/ HTTP/1.1" 200 8116
+[WARNING] 2025-06-08 19:53:11,351 django.request - Not Found: /booking/
+[WARNING] 2025-06-08 19:53:11,353 django.server - "GET /booking/ HTTP/1.1" 404 3613
+[WARNING] 2025-06-08 19:53:15,239 django.request - Not Found: /
+[WARNING] 2025-06-08 19:53:15,242 django.server - "GET / HTTP/1.1" 404 3571
+[WARNING] 2025-06-09 20:56:12,301 django.request - Not Found: /book/
+[WARNING] 2025-06-09 20:56:12,753 django.request - Bad Request: /book/
+[WARNING] 2025-06-09 20:56:13,565 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-09 20:56:13,985 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-09 20:59:04,798 django.request - Not Found: /book/
+[WARNING] 2025-06-09 20:59:05,316 django.request - Bad Request: /book/
+[WARNING] 2025-06-09 20:59:06,179 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-09 20:59:06,548 django.request - Bad Request: /bookings/
+[INFO] 2025-06-09 21:11:49,044 django.utils.autoreload - Watching for file changes with StatReloader
+[WARNING] 2025-06-09 21:13:45,809 django.request - Not Found: /booking/
+[WARNING] 2025-06-09 21:13:45,812 django.server - "GET /booking/?email=email@test.com HTTP/1.1" 404 3106
+[WARNING] 2025-06-09 21:16:54,886 django.request - Unauthorized: /bookings/
+[WARNING] 2025-06-09 21:16:54,889 django.server - "GET /bookings/?email=email@test.com HTTP/1.1" 401 58
+[INFO] 2025-06-09 21:31:59,600 django.utils.autoreload - C:\Users\bharadwaj\Downloads\fitness_booking\fitness_booking\booking\serializers.py changed, reloading.
+[INFO] 2025-06-09 21:32:00,890 django.utils.autoreload - Watching for file changes with StatReloader
+[INFO] 2025-06-09 21:32:05,249 django.utils.autoreload - C:\Users\bharadwaj\Downloads\fitness_booking\fitness_booking\booking\serializers.py changed, reloading.
+[INFO] 2025-06-09 21:32:06,649 django.utils.autoreload - Watching for file changes with StatReloader
+[INFO] 2025-06-09 21:32:08,960 django.utils.autoreload - C:\Users\bharadwaj\Downloads\fitness_booking\fitness_booking\booking\serializers.py changed, reloading.
+[INFO] 2025-06-09 21:32:10,075 django.utils.autoreload - Watching for file changes with StatReloader
+[INFO] 2025-06-09 21:41:17,058 django.utils.autoreload - C:\Users\bharadwaj\Downloads\fitness_booking\fitness_booking\booking\views.py changed, reloading.
+[INFO] 2025-06-09 21:41:18,303 django.utils.autoreload - Watching for file changes with StatReloader
+[INFO] 2025-06-09 21:41:21,221 django.utils.autoreload - C:\Users\bharadwaj\Downloads\fitness_booking\fitness_booking\booking\views.py changed, reloading.
+[INFO] 2025-06-09 21:41:22,310 django.utils.autoreload - Watching for file changes with StatReloader
+[INFO] 2025-06-09 21:41:48,021 django.utils.autoreload - C:\Users\bharadwaj\Downloads\fitness_booking\fitness_booking\booking\views.py changed, reloading.
+[INFO] 2025-06-09 21:41:49,107 django.utils.autoreload - Watching for file changes with StatReloader
+[INFO] 2025-06-09 21:41:51,992 django.utils.autoreload - C:\Users\bharadwaj\Downloads\fitness_booking\fitness_booking\booking\views.py changed, reloading.
+[INFO] 2025-06-09 21:41:53,380 django.utils.autoreload - Watching for file changes with StatReloader
+[INFO] 2025-06-09 21:43:05,822 django.server - "GET /api/user/register HTTP/1.1" 301 0
+[WARNING] 2025-06-09 21:43:06,363 django.request - Method Not Allowed: /api/user/register/
+[WARNING] 2025-06-09 21:43:06,366 django.server - "GET /api/user/register/ HTTP/1.1" 405 12892
+[INFO] 2025-06-09 21:43:06,426 django.server - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:06,454 django.server - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:06,458 django.server - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:06,468 django.server - "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:06,471 django.server - "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:06,487 django.server - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:06,499 django.server - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:06,499 django.server - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:06,517 django.server - "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:06,522 django.server - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:06,532 django.server - "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:06,534 django.server - "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[WARNING] 2025-06-09 21:43:06,662 django.request - Not Found: /favicon.ico
+[WARNING] 2025-06-09 21:43:06,664 django.server - "GET /favicon.ico HTTP/1.1" 404 3094
+[WARNING] 2025-06-09 21:43:22,733 django.request - Method Not Allowed: /api/token/
+[WARNING] 2025-06-09 21:43:22,737 django.server - "GET /api/token/ HTTP/1.1" 405 12588
+[INFO] 2025-06-09 21:43:22,793 django.server - "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:22,814 django.server - "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:22,816 django.server - "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:22,836 django.server - "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:22,836 django.server - "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:22,837 django.server - "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:22,840 django.server - "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:22,843 django.server - "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:22,846 django.server - "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:22,854 django.server - "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:22,856 django.server - "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+[INFO] 2025-06-09 21:43:22,874 django.server - "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+[WARNING] 2025-06-09 21:43:22,983 django.request - Not Found: /favicon.ico
+[WARNING] 2025-06-09 21:43:22,986 django.server - "GET /favicon.ico HTTP/1.1" 404 3094
+[WARNING] 2025-06-09 21:44:02,100 django.request - Bad Request: /api/user/register/
+[WARNING] 2025-06-09 21:44:02,102 django.server - "POST /api/user/register/ HTTP/1.1" 400 13266
+[ERROR] 2025-06-09 21:44:22,080 django.request - Internal Server Error: /api/user/register/
+Traceback (most recent call last):
+  File "C:\Users\bharadwaj\Downloads\OpenAI_func_calling_project\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bharadwaj\Downloads\OpenAI_func_calling_project\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bharadwaj\Downloads\OpenAI_func_calling_project\venv\Lib\site-packages\django\views\decorators\csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bharadwaj\Downloads\OpenAI_func_calling_project\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bharadwaj\Downloads\OpenAI_func_calling_project\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bharadwaj\Downloads\OpenAI_func_calling_project\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\bharadwaj\Downloads\OpenAI_func_calling_project\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\bharadwaj\Downloads\OpenAI_func_calling_project\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bharadwaj\Downloads\fitness_booking\fitness_booking\booking\views.py", line 41, in post
+    status=status.HTTP_201_CREATED
+           ^^^^^^
+NameError: name 'status' is not defined
+[ERROR] 2025-06-09 21:44:22,094 django.server - "POST /api/user/register/ HTTP/1.1" 500 99662
+[INFO] 2025-06-09 21:44:40,371 django.utils.autoreload - C:\Users\bharadwaj\Downloads\fitness_booking\fitness_booking\booking\views.py changed, reloading.
+[INFO] 2025-06-09 21:44:41,525 django.utils.autoreload - Watching for file changes with StatReloader
+[INFO] 2025-06-09 21:45:45,896 django.utils.autoreload - Watching for file changes with StatReloader
+[WARNING] 2025-06-09 21:45:52,148 django.request - Bad Request: /api/user/register/
+[WARNING] 2025-06-09 21:45:52,150 django.server - "POST /api/user/register/ HTTP/1.1" 400 13050
+[WARNING] 2025-06-09 21:45:55,489 django.request - Bad Request: /api/user/register/
+[WARNING] 2025-06-09 21:45:55,491 django.server - "POST /api/user/register/ HTTP/1.1" 400 13050
+[INFO] 2025-06-09 21:46:07,174 django.server - "POST /api/user/register/ HTTP/1.1" 201 12899
+[WARNING] 2025-06-09 21:47:53,039 django.request - Not Found: /book/
+[WARNING] 2025-06-09 21:47:53,393 django.request - Bad Request: /book/
+[WARNING] 2025-06-09 21:47:54,181 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-09 21:47:54,545 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-09 21:53:24,655 django.request - Not Found: /book/
+[WARNING] 2025-06-09 21:53:30,256 django.request - Bad Request: /book/
+[WARNING] 2025-06-09 21:53:31,057 django.request - Unauthorized: /bookings/
+[WARNING] 2025-06-09 21:53:31,943 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-09 21:57:37,628 django.request - Not Found: /book/
+[WARNING] 2025-06-09 21:57:38,022 django.request - Bad Request: /book/
+[WARNING] 2025-06-09 21:57:38,714 django.request - Unauthorized: /bookings/
+[WARNING] 2025-06-09 21:57:39,452 django.request - Bad Request: /bookings/
+[WARNING] 2025-06-09 21:57:55,575 django.request - Unauthorized: /api/token/
+[WARNING] 2025-06-09 21:57:55,578 django.server - "POST /api/token/ HTTP/1.1" 401 12528
+[INFO] 2025-06-09 21:58:57,219 django.server - "POST /api/user/register/ HTTP/1.1" 201 12899
+[INFO] 2025-06-09 21:59:16,995 django.server - "POST /api/token/ HTTP/1.1" 200 13032
+[WARNING] 2025-06-09 22:01:25,687 django.request - Unauthorized: /bookings/
+[WARNING] 2025-06-09 22:01:25,690 django.server - "GET /bookings/?email=bharadwaj123&eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ5NDg3NDU2LCJpYXQiOjE3NDk0ODY1NTYsImp0aSI6ImY5YTQ4NDRhMmEwODQzZDViOTE0YWExOWRmNWMyYzJjIiwidXNlcl9pZCI6MX0.fvXtQeyb9e6CzZt3xA8pLm3hm76tO-uJSsI38-1XbwY%22 HTTP/1.1" 401 11060
+[WARNING] 2025-06-09 22:01:43,849 django.request - Unauthorized: /bookings/
+[WARNING] 2025-06-09 22:01:43,855 django.server - "GET /bookings/?email=bharadwaj123@gmail.com&eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ5NDg3NDU2LCJpYXQiOjE3NDk0ODY1NTYsImp0aSI6ImY5YTQ4NDRhMmEwODQzZDViOTE0YWExOWRmNWMyYzJjIiwidXNlcl9pZCI6MX0.fvXtQeyb9e6CzZt3xA8pLm3hm76tO-uJSsI38-1XbwY%22 HTTP/1.1" 401 11104
+[WARNING] 2025-06-09 22:02:16,516 django.request - Unauthorized: /bookings/
+[WARNING] 2025-06-09 22:02:16,520 django.server - "GET /bookings/?email=bharadwaj123@gmail.com&eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ5NDg3NDU2LCJpYXQiOjE3NDk0ODY1NTYsImp0aSI6ImY5YTQ4NDRhMmEwODQzZDViOTE0YWExOWRmNWMyYzJjIiwidXNlcl9pZCI6MX0.fvXtQeyb9e6CzZt3xA8pLm3hm76tO-uJSsI38-1XbwY%22 HTTP/1.1" 401 11104
+[WARNING] 2025-06-09 22:04:59,553 django.request - Unauthorized: /bookings/
+[WARNING] 2025-06-09 22:04:59,557 django.server - "GET /bookings/?email=bharadwaj123@gmail.com&eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQ5NDg3NDU2LCJpYXQiOjE3NDk0ODY1NTYsImp0aSI6ImY5YTQ4NDRhMmEwODQzZDViOTE0YWExOWRmNWMyYzJjIiwidXNlcl9pZCI6MX0.fvXtQeyb9e6CzZt3xA8pLm3hm76tO-uJSsI38-1XbwY%22 HTTP/1.1" 401 11104
+[WARNING] 2025-06-09 22:10:47,964 django.request - Unauthorized: /bookings/
+[WARNING] 2025-06-09 22:10:47,966 django.server - "GET /bookings/?email=bharadwaj123%40gmail.com HTTP/1.1" 401 172
+[WARNING] 2025-06-09 22:11:13,708 django.request - Unauthorized: /bookings/
+[WARNING] 2025-06-09 22:11:13,709 django.server - "GET /bookings/?email=bharadwaj123%40gmail.com HTTP/1.1" 401 172

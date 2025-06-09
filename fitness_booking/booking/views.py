@@ -4,7 +4,7 @@ from rest_framework.decorators import api_view, permission_classes, authenticati
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.response import Response
-from rest_framework import generics
+from rest_framework import generics, status
 from .models import Class, Booking
 from django.contrib.auth.models import User
 from .serializers import ClassSerializer, BookingSerializer, BookingRequestSerializer, UserSerializer
@@ -13,14 +13,33 @@ import pytz
 
 logger = logging.getLogger(__name__)
 
+# class CreateUserView(generics.CreateAPIView):
+#     """API endpoint for user registration."""
+#     queryset = User.objects.all()
+#     serializer_class = UserSerializer
+#     permission_classes = [AllowAny]  # Allow anyone to register
+#     authentication_classes = []  # No authentication required for registration
+
+#     logger.info("User registration accessed.")
+
+
 class CreateUserView(generics.CreateAPIView):
     """API endpoint for user registration."""
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = [AllowAny]  # Allow anyone to register
-    authentication_classes = []  # No authentication required for registration
+    permission_classes = [AllowAny]
+    authentication_classes = []
 
-    logger.info("User registration accessed.")
+    def perform_create(self, serializer):
+        user = serializer.save()
+        logger.info(f"User registered: {user.username}")
+
+    def post(self, request, *args, **kwargs):
+        response = super().post(request, *args, **kwargs)
+        return Response(
+            {"message": "User created successfully", "user_id": response.data['id']},
+            status=status.HTTP_201_CREATED
+        )
 
 
 @api_view(['GET'])
@@ -34,6 +53,7 @@ def get_classes(request):
     classes = Class.objects.all()
     serializer = ClassSerializer(classes, many=True)
     return Response(serializer.data)
+
 
 @api_view(['POST'])
 @authentication_classes([JWTAuthentication])
@@ -62,13 +82,18 @@ def book_class(request):
             return Response({"error": "Class not found"}, status=404)
     return Response(serializer.errors, status=400)
 
+
 @api_view(['GET'])
 @authentication_classes([JWTAuthentication])
 @permission_classes([IsAuthenticated])
 def get_bookings(request):
     email = request.user.email  # Restrict to authenticated user's email
-    bookings = Booking.objects.filter(client_email=email)
-    serializer = BookingSerializer(bookings, many=True)
     logger.info(f"Fetching bookings for user: {request.user.username}")
+    bookings = Booking.objects.filter(client_email=email)
+    print(f"Bookings found: {bookings.count()} for user: {request.user.username}")
+    if bookings.count() == 0:
+        logger.info(f"No bookings found for user: {request.user.username}")
+        return Response({"message": "No bookings found"}, status=400)
+    
+    serializer = BookingSerializer(bookings, many=True)
     return Response(serializer.data)
-
