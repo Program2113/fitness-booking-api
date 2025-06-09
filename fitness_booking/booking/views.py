@@ -13,15 +13,6 @@ import pytz
 
 logger = logging.getLogger(__name__)
 
-# class CreateUserView(generics.CreateAPIView):
-#     """API endpoint for user registration."""
-#     queryset = User.objects.all()
-#     serializer_class = UserSerializer
-#     permission_classes = [AllowAny]  # Allow anyone to register
-#     authentication_classes = []  # No authentication required for registration
-
-#     logger.info("User registration accessed.")
-
 
 class CreateUserView(generics.CreateAPIView):
     """API endpoint for user registration."""
