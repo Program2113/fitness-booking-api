@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Django SQLite DB
+db.sqlite3
+
+# Django migrations (except __init__.py)
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# Environment / Secrets
+.env
+*.env
+
+# Virtualenv
+venv/
+myenv/
+
+# IDEs / Editors
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
